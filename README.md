@@ -19,7 +19,7 @@ NOTE: if anything goes wrong building this you could totally end up bricking you
 ## Files
 
 - **fwmod**: malicious firmware for the Hush
-    - **firmwaremod.s**: edits the firmware to (a) install hooks into the softdevice that will allow us to intercept raw incoming/outgoing BLE packets and send (b) our own raw BLE packets
+    - **firmwaremod.s**: edits the firmware to (a) install hooks into the softdevice that will allow us to intercept raw incoming/outgoing BLE packets and (b) send our own raw BLE packets
     - **exploit**
         - **source/main.c**: C implementation of the Nordic SoftDevice BLE vulnerability exploit
         - **source/payload.c**: binary payload to be sent to and run by the victim USB dongle
